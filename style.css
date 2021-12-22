@@ -1,0 +1,153 @@
+/** navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 5.2vh;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  padding: 1.3vh 1.2vw;
+  text-decoration: none;
+  transition: font-size 1s ease, background-color 1s ease;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  font-size: 1.3vw;
+}
+
+/** head (head of webpage, not html element head)*/
+#head h1 {
+  text-align: center;
+  font-size: 4vw;
+  font-family: "Jazz LET", fantasy;
+  padding: 2vw 2vw 0vw 2vw;
+  margin: 0;
+}
+
+#head p {
+  padding: 3vw;
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+#head {
+  background-color: lightcyan;
+}
+
+/** main images/descriptions */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+
+#chichenItza .desc {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 14vw;
+  margin: 4vh 1vw 1vh 3vw; /** top right bottom left */
+}
+
+#greatWall .desc {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 16vw;
+  margin: 6vh 3vw 1vh 1vw; /** top right bottom left */
+}
+
+#petra .desc {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 15vw;
+  margin: 6vh 1vw 1vh 3vw; /** top right bottom left */
+}
+
+#christ .desc {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 16vw;
+  margin: 4vh 1vw 1vh 3vw; /** top right bottom left */
+}
+
+#colosseum .desc {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 18vw;
+  margin: 5vh 6vw 1vh 1vw; /** top right bottom left */
+}
+
+#tajMahal .desc {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 15vw;
+  margin: 5vh 1vw 1vh 1vw; /** top right bottom left */
+}
+
+#machuPichu .desc {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2vh 2vw;
+  height: 16vw;
+  margin: 2vh 7vw 1vh 1vw; /** top right bottom left */
+}
+
+.desc {
+  background: rgba(120, 120, 120, .2);
+  z-axis: 5;
+  font-size: 1vw;
+  color: rgba(0, 0, 0, 0.3);
+  width: 25.5vw;
+  opacity: 1;
+  display: block;
+  font-family: sans-serif;
+  transition: background 1s ease, color 1s ease;
+}
+
+.desc:hover {
+  background: rgba(120, 120, 120, .3);
+  color: rgba(0, 0, 0, 1);
+}
+
+img {
+  width: 100vw;
+  z-axis: -1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
